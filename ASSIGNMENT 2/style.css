@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary: #eee;
+    --text-color-1: #333;
+    --text-color-2: #fff;
+    --link-color: #5395ce;
+    --dark-blue: #4e80ee;
+}
+
+html {
+    font-size: 150%;
+    font-family: Inter;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--primary);
+    overflow-x: hidden;
+    background-image: radial-gradient(#ddd 2px, transparent 2px);
+    background-size: 30px 30px;
+}
+
+/* NAVBAR STYLE BEGINS HERE */
+
+.navbar {
+    position: fixed;
+    right: 0;
+    margin-top: 200px !important;
+    margin-right: 20px;
+    background-color: rgba(225, 225, 225, 0.764);
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.navbar ul li {
+    height: fit-content;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+/* NAVBAR STYLE ENDS HERE */
+
+/* HOME / HERO STYLE PAGE BEGINS HERE */
+
+#home {
+    margin: 0 150px;
+    display: flex;
+    height: 100vh;
+}
+
+.mename a {
+    color: rgb(78, 128, 238);
+    text-decoration: underline;
+    font-size: 20px;
+    text-underline-offset: 4px;
+}
+
+.hi {
+    font-size: 20px;
+}
+
+.homeitms {
+    display: flex;
+    gap: 100px;
+    padding-top: 20px;
+}
+
+.homeabt {
+    font-size: 18px;
+    height: fit-content;
+}
+
+.heroimg {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.homeabt-txt {
+    display: flex;
+    align-items: center;
+}
+
+.heroimg img {
+    width: 500px;
+    border-radius: 5%;
+    background-color: rgba(225, 225, 225, 0.764);
+}
+
+/* HOME / HERO STYLE ENDS HERE */
+
+/* ABOUT STYLE STARTS HERE */
+
+#about {
+    margin: 0 150px;
+    height: 100vh;
+    text-align: justify;
+}
+
+.abt-bio {
+    font-size: 15px;
+    height: fit-content;
+}
+
+.abt-text {
+    display: flex;
+    justify-content: center;
+    margin: 50px !important;
+    height: fit-content !important;
+}
+
+.abt-me {
+    font-size: 20px;
+}
+
+.abt-itms {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+/* ABOUT STYLE ENDS HERE */
+
+/* SKILLS STYLE STARTS HERE */
+
+#skills {
+    background-color: #222;
+    background-image: radial-gradient(#333 2px, transparent 2px);
+    background-size: 30px 30px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin: 0 352px;
+}
+
+.skills-grid-item {
+    width: 150px;
+    transition: all 0.3s;
+}
+
+.skills-grid-item:hover {
+    transform: scale(1.3);
+}
+
+.skills-title {
+    color: var(--text-color-2);
+}
+
+.skills-itms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+}
+
+.skills-itms h3 {
+    margin: 30px;
+    color: white;
+    font-size: 30px;
+}
+
+/* SKILL STYLE ENDS HERE */
+
+/* PROJECTS STYLE STARTS HERE  */
+
+#projects {
+    margin: 0 150px;
+    display: flex;
+    height: 100vh;
+}
+
+/* CONTACT */
+
+#contact {
+    margin: 0 150px;
+    display: flex;
+    height: 100vh;
+}
+
+.contact-heading {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-form {
+    padding: 36px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    border-radius: 19.2px;
+
+}
+
+input,
+textarea {
+    width: 89%;
+    padding: 16px;
+    margin: 16px;
+    border: 0.16px solid #ccc;
+    border-radius: 6.4px;
+}
+
+button {
+    padding: 16px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6.4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.social-media-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.6rem;
+    margin-bottom: 9.6rem;
+}
+
+.fa-brands {
+    color: var(--text-color-1);
+    transition: all 0.3s;
+}
+
+.fa-brands:hover,
+.fa-brands:active {
+    color: var(--link-color);
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    gap: 20px;
+    display: flex;
+
+    justify-content: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.socialicon {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
