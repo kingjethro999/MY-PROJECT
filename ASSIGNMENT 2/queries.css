@@ -1,0 +1,157 @@
+/* ALL MEDIA QUERRIES TO MAKE WEBSITE RESPONSIVE */
+
+/* Landscape Tablets - 1200px */
+@media (max-width: 1200px) {
+  /* Reduce font size of all elements */
+  /* html {
+      font-size: 80%;
+    } */
+
+  /* Decrease width of hero image */
+  .heroimg img {
+    width: 65%;
+  }
+
+  * {
+    margin: 0 !important;
+  }
+}
+
+/* Tablets - 950px */
+@media (max-width: 960px) {
+  /* Make hero section one column */
+
+  .homeitms {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 102.4px;
+    margin-bottom: 153.6px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Center the hero image */
+  .heroimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Reduce size of skills items */
+  .skills-grid-item {
+    width: 80px;
+  }
+
+  /* MOBILE & TABLET NAVIGATION */
+  .navbar {
+    bottom: 0;
+    width: 96% !important;
+    margin: 0 auto !important;
+    height: fit-content !important;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    backdrop-filter: blur(10px);
+    background-color: rgba(104, 104, 104, 0.327);
+  }
+
+  .navbar ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  button:hover {
+    background-color: transparent;
+  }
+
+}
+
+/* SMALLER TABLETS - 700px */
+@media (max-width: 44em) {
+
+  html {
+    padding-top: 50px;
+  }
+
+  #home {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #skills {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #projects {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #about {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #contact {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  /* HERO */
+  .homeitms {
+    height: auto;
+  }
+
+  /* SKILLS SECTION - 3x3 */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .footer {
+    position: sticky;
+    bottom: 58px;
+  }
+}
+
+/* MOBILE DEVICES - 550px */
+@media (max-width: 560px) {
+  .container {
+    padding-left: 38.4px;
+    padding-right: 38.4px;
+  }
+
+  /* HERO */
+  .homeitms {
+    padding: 0 51.2px;
+  }
+
+  .heroimg img {
+    width: 80%;
+  }
+
+  /* CONTACT */
+  .contact-form {
+    width: 100%;
+  }
+
+  .fa-brands.fa-8x {
+    font-size: 64px;
+  }
+
+  .contacts-container {
+    padding-bottom: 34.8px;
+  }
+
+  .social-media-wrapper {
+    margin-bottom: 34.8px;
+  }
+
+  .footer {
+    bottom: 60px;
+  }
+}
